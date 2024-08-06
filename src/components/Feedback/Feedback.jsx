@@ -1,6 +1,8 @@
+import s from "./Feedback.module.css";
+
 const Feedback = ({ feedback, positiveFeedback }) => {
   return (
-    <ul>
+    <ul className={s.list}>
       {feedback.map(([key, value]) => (
         <li key={key}>
           <span>
