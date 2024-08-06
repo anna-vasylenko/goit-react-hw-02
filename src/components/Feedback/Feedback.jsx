@@ -5,13 +5,13 @@ const Feedback = ({ feedback, positiveFeedback }) => {
     <ul className={s.list}>
       {feedback.map(([key, value]) => (
         <li key={key}>
-          <span>
+          <span className={s.item}>
             {key}: {value}
           </span>
         </li>
       ))}
       <li>
-        <span>Positive: {positiveFeedback}%</span>
+        <span className={s.item}>Positive: {positiveFeedback}%</span>
       </li>
     </ul>
   );

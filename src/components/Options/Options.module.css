@@ -8,8 +8,21 @@
 }
 
 .btn {
-  padding: 5px;
-  border: 1px solid black;
-  background-color: rgb(141, 139, 139);
+  padding: 10px 20px;
+  border: none;
+  background-color: #588157;
   text-transform: capitalize;
+  border-radius: 10px;
+  transition: all 300ms ease;
+  color: white;
+  &:hover {
+    background-color: #3a5a40;
+  }
+}
+
+.reset {
+  background-color: #ef233c;
+  &:hover {
+    background-color: #d90429;
+  }
 }

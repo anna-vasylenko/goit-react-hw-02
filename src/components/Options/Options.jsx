@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import s from "./Options.module.css";
 
 const Options = ({ options, handleClick, handleResetClick, total }) => {
@@ -12,7 +13,10 @@ const Options = ({ options, handleClick, handleResetClick, total }) => {
       ))}
       {total > 0 && (
         <li className={s.item}>
-          <button onClick={() => handleResetClick()} className={s.btn}>
+          <button
+            onClick={() => handleResetClick()}
+            className={clsx(s.btn, s.reset)}
+          >
             Reset
           </button>
         </li>
